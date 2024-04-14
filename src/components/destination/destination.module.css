@@ -1,0 +1,15 @@
+
+.imgContainer{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+}
+.textContainer{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+}

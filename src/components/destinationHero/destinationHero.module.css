@@ -1,0 +1,20 @@
+.container{
+    background-color: lightgrey;
+}
+.textContainer{
+    flex: 1;
+
+}
+
+.imgWrapper{
+    flex: 1;
+}
+.imgContainer{
+    margin: auto;
+    position: relative;
+    width: 300px;
+    height: 250px;
+}
+.img{
+    border-radius: 20px;
+}

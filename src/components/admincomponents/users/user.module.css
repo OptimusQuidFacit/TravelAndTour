@@ -1,0 +1,9 @@
+.col{
+    flex: 1;
+}
+.email{
+    flex: 2;
+}
+.userButton{
+    font-size: 0.8rem;
+}

@@ -1,0 +1,26 @@
+.container{
+    height: calc(100vh - 200px);
+}
+.section1{
+    height: 50%;
+    width: 100%;
+    overflow: scroll;
+}
+.row{
+    width: 130%;
+}
+.namecol{
+    flex: 2;
+}
+.col{
+    flex: 1;
+    min-width: 70px;
+}
+.section2 {
+    height: 50%;
+    max-width: 70vw;
+}
+.chartsContainer{
+    max-width: 100%;
+    overflow: scroll;
+}

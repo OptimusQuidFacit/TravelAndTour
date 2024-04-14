@@ -1,0 +1,107 @@
+.heroContainer{
+    text-align: center;
+}
+.imgContainer{
+    margin: auto;
+    height: 300px;
+    position: relative;
+}
+.textContainer{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 10px;
+}
+.bookingContainer{
+    width: 70%;
+    margin: auto;
+    background-color: #F0F0F0;
+    border-top-left-radius:8% 100%;
+    border-top-right-radius:8% 100%;
+    border-bottom-right-radius:8% 100%;
+    border-bottom-left-radius:8% 100%;
+    transform: translateY(-50%);
+}
+.option{
+    border-right: 1px solid black;
+    flex: 1;
+    font-size: 0.8rem;
+}
+.option:last-child{
+    border-right: none;
+}
+.reduceHeight{
+    margin-top: -12px;
+}
+.startIcon{
+    padding:10px 5px;
+    border-radius: 10px;
+    background-color: white;
+    width: 50px;
+    margin: auto;
+    cursor: pointer;
+}
+
+@media(max-width: 1100px){
+    .option:nth-child(4){
+        display: none;
+        border: none;
+        font-size: 0.6rem;
+    }
+    
+    .option:last-child{
+        display: block;
+    }
+}
+@media(max-width: 870px){
+    .option:nth-child(4){
+        display: none;
+        border: none;
+        font-size: 0.6rem;
+    }
+    .option:nth-child(3){
+        display: none;
+        border: none;
+        font-size: 0.6rem;
+    }
+    .option:nth-child(4){
+        display: none;
+        border: none;
+        font-size: 0.6rem;
+    }
+    
+    .option:last-child{
+        display: block;
+    }
+}
+
+@media(max-width: 700px){
+    /* .heroContainer{
+        
+    } */
+    .imgContainer{
+        margin: 0;
+        width: 100%;
+    }
+    .textContainer {
+        font-style: 0.6rem;
+        width: 100%;
+        padding: 5px;
+    }
+    .bookingContainer{
+        background-color: transparent;
+    }
+    .option{
+        display: none;
+        border: none;
+        font-size: 0.6rem;
+    }
+    .option:last-child{
+        display: block;
+    }
+    .startIcon{
+        box-shadow: 5px 5px 5px grey;
+    }
+}

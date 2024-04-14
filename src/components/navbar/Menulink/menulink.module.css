@@ -1,0 +1,63 @@
+.navlink{
+    margin: 0 10px;
+}
+
+/* style for next/link */
+.link{
+    text-decoration: none;
+    position: relative;
+    
+
+}
+.link::before{
+    content:'';
+    height: 3px;
+    width: 0;
+    /* width: 100%; */
+    position:absolute;
+    bottom: -3px;
+    background: #6C4417;
+    transition: all 2s ease-in;
+}
+.link:hover::before{
+    min-width: 100%;
+    /* padding-bottom: 1px; */
+}
+.active{
+    border-bottom: 3px solid #6C4417;
+    padding-bottom: 1px;
+}
+
+
+/* second set of links */
+.link2{
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    padding: 5px;
+}
+
+/* when the element with class link2 in hovered */
+.link2:hover .link::before{
+    min-width:0;
+   
+}
+.link2:hover{
+    background-color: #6C4417;
+    color: white;
+}
+.link2:hover .link{
+    color: white;
+}
+
+.link2 .active {
+    color: white;
+}
+.activeContainer{
+    background: #6C4417;
+}
+
+/* style for sidebar links */
+.sidelink{
+    color:white;
+}

@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+font-family: 'Tangerine';
+}
+
+.input{
+    display: block;
+    margin: auto;
+    width: 350px;
+
+}

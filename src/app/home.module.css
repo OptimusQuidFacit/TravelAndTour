@@ -1,0 +1,36 @@
+.featuredWrapper{
+    width: 100%;
+    overflow: auto;
+
+}
+.topRatedWrapper{
+    width: 100%;
+    overflow: auto;
+}
+.subscribeWrapper{
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.subscribeText{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    line-height: 0.7rem;
+}
+.btnText{
+    background-color: white;
+}
+
+@media(max-width: 850px){
+    .subscribeWrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+    .subscribeText{
+        display: block;
+        line-height: 1.3rem;
+    }
+}

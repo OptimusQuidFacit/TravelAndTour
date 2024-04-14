@@ -1,0 +1,11 @@
+.leftText, .rightText {
+    font-size: 0.8rem;
+    flex: 1;
+}
+
+.link{
+    text-decoration: none;
+}
+.footerList{
+    list-style: none;
+}

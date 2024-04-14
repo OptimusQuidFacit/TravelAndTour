@@ -1,5 +1,5 @@
 {
-  "name": "next14starter",
+  "name": "TravelandTour",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.10",
+    "@mui/material": "^5.15.10",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.2",
+    "dotenv": "^16.4.5",
+    "install": "^0.13.0",
+    "mongoose": "^8.2.2",
+    "next": "^14.1.4",
+    "next-auth": "^5.0.0-beta.15",
+    "npm": "^10.2.5",
+    "openssl": "^2.0.0",
+    "paystack-api": "^2.0.6",
     "react": "^18",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "react-paystack": "^5.0.0"
   },
   "devDependencies": {
     "eslint": "^8",

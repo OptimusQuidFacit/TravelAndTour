@@ -1,0 +1,26 @@
+.container{
+    flex: 1;
+    background-color: lightgrey;
+    max-width: 400px;
+}
+.imgContainer{
+    background-color: lightgray;
+    position: relative;
+    width: 100%;
+    min-width: 200px;
+    min-height: 200px;
+}
+.ratingContainer{
+    position: absolute;
+    top: 1px;
+    font-size: 0.5rem;
+    width: 100%;
+}
+.textContainer{
+    margin-top: 20px;
+    font-size: 0.8rem;
+    line-height: 0.4rem;
+}
+.icon{
+    font-size: 0.7rem;
+}

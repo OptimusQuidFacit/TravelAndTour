@@ -1,0 +1,10 @@
+.container{
+    height: calc(100vh - 200px);
+}
+.section1{
+    width: 100%;
+
+}
+.col{
+    flex:1;
+}
