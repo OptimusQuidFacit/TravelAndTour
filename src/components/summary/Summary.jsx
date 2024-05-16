@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 // import { handlePayment } sfrom "@/lib/controllers/orders";
 import { PaystackButton } from "react-paystack";
 import { updateOrders } from "@/lib/controllers/orders";
-const Summary = ({user, id}) => {
+const Summary = ({user, id, paystackKey}) => {
 
     const [order, setOrder] = useState(null);
     const [isLoading, setisLoading] = useState(true);
@@ -28,7 +28,7 @@ const Summary = ({user, id}) => {
      const props= {
         email: user?.email,
         amount: order?.total *1300*100,
-        publicKey: 'pk_test_c9581ff6d96b0bf2e026a0960f773fa1e8d4cad1',
+        publicKey: paystackKey,
         text: "Pay Now",
         onSuccess: () =>{
             updateOrders(order._id, {paid:true});
