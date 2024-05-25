@@ -1,8 +1,8 @@
 "use client"
 import { Chart } from "chart.js/auto";
 import { CategoryScale } from "chart.js";
-import { Bar, Line } from "react-chartjs-2";
-import { accomodations, places } from "@/lib/data";
+import { Line } from "react-chartjs-2";
+// import { accomodations, places } from "@/lib/data";
 
 const randomColor=()=>{
     const r=Math.floor(Math.random()*256);

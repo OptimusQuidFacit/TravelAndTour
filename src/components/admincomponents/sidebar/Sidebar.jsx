@@ -25,7 +25,7 @@ const Sidebar = () => {
                 <Link key={item.path} href={item.path} className={styles.link}>
                     <p className={`${styles.menu} ${item.path===pathname&&styles.active} text-white`}>
                             {item.name}
-                        </p>
+                    </p>
                 </Link>
                 )   
             }

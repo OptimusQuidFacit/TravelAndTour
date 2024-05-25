@@ -9,7 +9,7 @@ const Users = ({users}) => {
     return (
         <div>
            {users.map(user=>
-                <div className={`d-flex rounded rounded-2 shadow shadow-1 p-2 align-items-center`}>
+                <div key={user.email} className={`d-flex rounded rounded-2 shadow shadow-1 p-2 align-items-center`}>
                     <p className={` ${styles.col}`}>
                         {user.firstname}
                     </p>
