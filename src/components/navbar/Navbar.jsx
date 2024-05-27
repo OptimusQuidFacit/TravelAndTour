@@ -6,9 +6,12 @@ import Sidebar from "./Sidebar/Sidebar";
 import MenuIcon from '@mui/icons-material/Menu';
 import { useEffect, useState } from "react";
 import { handleLogout } from "@/lib/controllers/user";
+import { usePathname } from "next/navigation";
 
 const Navbar = ({session}) => {
     const isAdmin= session?.user.isAdmin;
+    const pathname= usePathname();
+    // console.log(pathname.startsWith('/admin'))
     // console.log(session);
     // console.log(session?.user.isAdmin)
     
@@ -44,7 +47,7 @@ const Navbar = ({session}) => {
     }, [open]);
     
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${pathname.startsWith('/admin')&&styles.admin}`}>
         <div className="d-flex px-5 py-3 justify-content-between align-items-center">
             <div className="container1 d-flex align-items-center">
                 <div className="logo fw-bold fs-3 me-3">
