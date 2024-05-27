@@ -36,7 +36,9 @@ const Navbar = ({session}) => {
     useEffect(()=>{
         const handleClickOutside= (e)=>{
             if(open && !e.target.closest('.sidebar')){
-                setOpen(false);
+                // setTimeout(()=>{
+                        setOpen(false);
+                    // }, 1000);
             }
         }
         document.addEventListener('click', handleClickOutside);
@@ -92,7 +94,7 @@ const Navbar = ({session}) => {
 
         </div>
         {open&&
-        <div className='.sidebar'>
+        <div className='sidebar'>
             <Sidebar  session={session}/>
         </div>
             }
