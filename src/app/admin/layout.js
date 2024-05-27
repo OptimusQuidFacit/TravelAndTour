@@ -10,9 +10,9 @@ const RootLayout = async ({children}) => {
             <div className={styles.sidebar}>
                 <Sidebar/>
             </div>
-            {/* <div className={styles.children}>
-            </div> */}
+            <div className={styles.children}>
                 {children}
+            </div>
         </div>
 
     );

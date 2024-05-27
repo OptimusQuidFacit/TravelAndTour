@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from './hero.module.css'
 import { Start } from "@mui/icons-material";
+import Link from "next/link";
 const Hero = () => {
     return (
         <section className={`${styles.heroContainer}`}>
@@ -32,8 +33,9 @@ const Hero = () => {
             </div>
             <div className={`${styles.option} px-2`}>
               <div className={styles.startIcon}>
-
-              <Start/>
+              <Link className="link" href={`/bookings`}>             
+                <Start/>
+              </Link>
               </div>
             </div>
         </div>

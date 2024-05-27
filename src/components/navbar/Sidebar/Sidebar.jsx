@@ -32,7 +32,7 @@ const Sidebar = ({session}) => {
             </div> */}
             <div className={`${styles.mobileContainer}`}>
                 {mobileLinks.map(link=>
-                    <div className={`btn ${link.path===pathname?styles.active:"btn-secondary"}`}>
+                    <div className={`${styles.mobileLink} btn ${link.path===pathname?styles.active:"btn-secondary"}`}>
                         <Link className={styles.link} href={link.path}>{link.name}</Link>
                     </div>)}
             </div>
