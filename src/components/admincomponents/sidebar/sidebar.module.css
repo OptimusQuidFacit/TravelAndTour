@@ -3,6 +3,7 @@
     border-radius: 20px;
     height: 100%;
     overflow: hidden;
+    max-height: 800px;
 }
 .menu:hover{
     background-color: lightgrey;

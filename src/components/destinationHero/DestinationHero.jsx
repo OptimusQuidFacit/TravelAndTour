@@ -1,19 +1,20 @@
 import Image from "next/image";
 import styles from "./destinationHero.module.css";
+import Link from "next/link";
 
 const DestinationHero = () => {
     return (
-        <div className={`d-flex ${styles.container} px-lg-5 py-lg-3 p-3 align-items-center`}>
+        <div className={`d-lg-flex ${styles.container} px-lg-5 py-lg-3 p-3 align-items-center`}>
             <div className={styles.textContainer}>
                 <h1 className="fw-bold">Explore our destinations</h1>
                 <p>Top tips for unforgettable travel experiences</p>
                 <div className="buttons ">
-                    <a className="btn bg-white shadow shadow-1">
-                        Discover
-                    </a>
-                    <a className="btn  ms-3 bg-white shadow shadow-1">
+                    <Link className=" link btn bg-white shadow shadow-1" href={`/bookings`}>
+                        Book now
+                    </Link>
+                    <Link className="link btn  ms-3 bg-white shadow shadow-1" href={`/packages`}>
                         Explore
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className={styles.imgWrapper}>

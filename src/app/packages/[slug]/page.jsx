@@ -7,13 +7,13 @@ import Link from "next/link";
 const page = ({params}) => {
     const { slug } = params;
     const filteredAccommodations = accomodations.filter(item=> item.place==slug)
-    console.log(filteredAccommodations);
+    // console.log(filteredAccommodations);
     return (
         <div>
             
             <div className={`${styles.body}`}>
                 <section>
-                    <h1 className="fw-bold text-center">
+                    <h1 className={`fw-bold text-center ${styles.heading}`}>
                         Our exciting Travel Packages for
                         <span className="ms-2 text-primary">
                             {slug}
