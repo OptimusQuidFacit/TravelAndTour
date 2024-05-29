@@ -18,7 +18,7 @@ const DestinationHero = () => {
                 </div>
             </div>
             <div className={styles.imgWrapper}>
-                <div className={styles.imgContainer}>
+                <div className={`${styles.imgContainer} mt-3`}>
                     <Image src="https://images.pexels.com/photos/15229548/pexels-photo-15229548/free-photo-of-aerial-view-of-the-sydney-opera-house-and-skyscrapers-sydney-australia.jpeg" 
                     fill className={`${styles.img}`} alt="Photo illustrating various travel destinations. Used as hero section for travel destinations page" />
                 </div>
