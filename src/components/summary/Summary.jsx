@@ -14,12 +14,18 @@ const Summary = ({user, id, paystackKey}) => {
     // console.log(order);
      useEffect(()=>{
         getOrder(id).then(res=>{
-            // console.log(res)
+            console.log(res)
             res.total = res.accommodationFee + res.flight_Fee;
             setOrder(res);
-            setisLoading(false)
+            setisLoading(false);
         }
             );
+        // const res= getOrder(id);
+        // console.log(res);
+        // res.total = res.accommodationFee + res.flight_Fee;
+        // setOrder(res);
+        // setisLoading(false);
+
      }, []);   
     //  useEffect(()=>{
     //    order&&updateOrders(order);
@@ -50,7 +56,7 @@ const Summary = ({user, id, paystackKey}) => {
                     isLoading?<div className="text-center p-3 fw-bold">Loading...</div>:
                     order&&Object.entries(order)
                     .map(([key,value]) =>
-                        <div className={`${styles.row} d-flex px-1 py-2 justify-content-center`}>
+                        <div key={key} className={`${styles.row} d-flex px-1 py-2 justify-content-center`}>
                             <p className={`${styles.col} fw-bold text-primary`}>{key==="accommodationFee"?"ACCOM. FEE":key.toUpperCase()}</p>
                             <p className={`${styles.col}`}>{key==="accommodationFee"||
                             key==="flight_Fee" || key==="total" ?`$${value}`:value}</p>

@@ -18,7 +18,7 @@ const Bookings = ({option}) => {
     const [choosenPackage, setChoosenPackage] = useState(option?accomodations.find(item=>item.resort===option):accomodations[0]);
     //Since this chosen package comes with a place where it is located, it is selected in the country/city field as in line 54. and thus the choosen package state is used to filter out only the accommodations in that Country/city to preserve the integrity  of the form.
     const [choosenAccommodations, setChoosenAccommodations] = useState(accomodations.filter(item=>item.place===choosenPackage.place));
-    console.log(choosenPackage);
+    // console.log(choosenPackage);
     const handleChoosenAccommodations = (e)=>{
         let items=accomodations.filter(item=>item.place===e.target.value)
         items.length>0?setChoosenAccommodations(items):setChoosenAccommodations(null);   
@@ -69,10 +69,10 @@ const Bookings = ({option}) => {
                     </div>
                     <div className={` ${styles.field}`}>
                         <div className="mb-2">   
-                            <label className={styles.label} htmlFor="checkIn">
+                            <label className={styles.label} htmlFor="check_In">
                                 Check-in date
                             </label>
-                            <input type="date" name="check_In" id="checkIn" />
+                            <input type="date" name="check_In" id="check_In" />
                         </div>
                         
                     </div>

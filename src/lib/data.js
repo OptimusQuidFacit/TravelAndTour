@@ -3,7 +3,9 @@ import Orders from "./models/orders";
 import User from "./models/user";
 
 export const brand="TravelExpl";
-export const domain = "http://localhost:3000"
+export const domain = "https://travel-and-tour-pi.vercel.app"
+
+
 export const places=[
     {
       place:"Maldives",
@@ -175,6 +177,13 @@ export const places=[
         const order= await fetch(`${domain}/api/orders/${id} `);
         if(order) return order.json();
         return "Order not found";
+        // const order= await Orders.findOne({_id:id});
+        // const {_id, flight_Fee, accommodationFee ,destination, accommodation, checkIn, guests, nights, Airline, take_Off_Time, comments} = order;
+
+        // if(order) return {_id, flight_Fee, accommodationFee ,destination, accommodation, checkIn, guests, nights, Airline, take_Off_Time, comments};
+        // ;
+        // console.log(order);
+        // return "Order not found";
 
 
     }

@@ -11,7 +11,7 @@ import Orders from "../models/orders";
 export const addOrder = async (prevState, formData)=>{
     const data = Object.fromEntries(formData);
     data.nights =parseInt(data.nights)
-    data.guests =parseInt(data.guests)
+    data.guests =parseInt(data.guests);
     data.accommodationFee= data.unitAccommodationPrice * data.nights;
     data.flight_Fee= data.flight_Fee ? data.flight_Fee * data.guests:
     data.flightFee * data.guests;
